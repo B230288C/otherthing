@@ -1,8 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import AppointmentForm from './Components/AppointmentForm';
 
 function App() {
-    return <h1>Hello React + Laravel!</h1>;
+  return <AppointmentForm />;
 }
 
 createRoot(document.getElementById('app')).render(<App />);
