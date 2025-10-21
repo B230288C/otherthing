@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://otherthing.test';
-
 export default function AppointmentForm() {
   const [form, setForm] = useState({ name: '', email: '', scheduled_at: '', status: 'pending' });
   const [appointments, setAppointments] = useState([]);
